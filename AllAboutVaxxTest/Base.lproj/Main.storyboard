@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2MC-Mw-KLK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2MC-Mw-KLK">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -141,21 +141,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtO-q6-sZT">
-                                <rect key="frame" x="146" y="120" width="136" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BtO-q6-sZT">
+                                <rect key="frame" x="37" y="120" width="354" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="354" id="72J-FU-Ib9"/>
+                                    <constraint firstAttribute="height" constant="46" id="NSb-ZP-oR1"/>
+                                </constraints>
                                 <attributedString key="attributedText">
                                     <fragment content="Library">
                                         <attributes>
                                             <font key="NSFont" size="40" name="Helvetica-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBm-vO-7zj">
-                                <rect key="frame" x="37" y="188" width="355" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBm-vO-7zj">
+                                <rect key="frame" x="37" y="200" width="355" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="355" id="aRl-Jx-XI6"/>
+                                    <constraint firstAttribute="height" constant="60" id="i2k-nc-iHb"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled">
                                     <attributedString key="attributedTitle">
@@ -167,39 +174,77 @@
                                     </attributedString>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvT-Oo-gqv">
-                                <rect key="frame" x="37" y="273" width="355" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsp-MT-xgL">
+                                <rect key="frame" x="37" y="389" width="355" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Tax-WJ-MmF"/>
+                                    <constraint firstAttribute="width" constant="355" id="YdR-YF-2Gj"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Covid - 19 Vaccine"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wsp-MT-xgL">
-                                <rect key="frame" x="37" y="359" width="355" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuX-56-2x7">
+                                <rect key="frame" x="37" y="493" width="355" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="355" id="gBm-9n-vCj"/>
+                                    <constraint firstAttribute="height" constant="60" id="v6u-1h-ndM"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Covid - 19 Vaccine"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuX-56-2x7">
-                                <rect key="frame" x="37" y="443" width="355" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDD-0G-2hj">
+                                <rect key="frame" x="37" y="595" width="355" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="hIn-vr-RhS"/>
+                                    <constraint firstAttribute="width" constant="355" id="iK1-RR-DTK"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Covid - 19 Vaccine"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kDD-0G-2hj">
-                                <rect key="frame" x="37" y="533" width="355" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8D4-rl-fOr">
+                                <rect key="frame" x="37" y="695" width="355" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="355" id="7nJ-uQ-drK"/>
+                                    <constraint firstAttribute="height" constant="55" id="fSv-Jt-nfb"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Covid - 19 Vaccine"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8D4-rl-fOr">
-                                <rect key="frame" x="37" y="621" width="355" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uvT-Oo-gqv">
+                                <rect key="frame" x="37" y="296" width="355" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="rjb-2n-GtK"/>
+                                    <constraint firstAttribute="width" constant="355" id="zPP-DC-Wbh"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Covid - 19 Vaccine"/>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GV4-fC-Bvu"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cBm-vO-7zj" firstAttribute="top" secondItem="BtO-q6-sZT" secondAttribute="bottom" constant="34" id="2ax-EU-cWo"/>
+                            <constraint firstItem="wsp-MT-xgL" firstAttribute="top" secondItem="uvT-Oo-gqv" secondAttribute="bottom" constant="33" id="4DD-Cn-4V7"/>
+                            <constraint firstItem="GV4-fC-Bvu" firstAttribute="trailing" secondItem="cBm-vO-7zj" secondAttribute="trailing" constant="36" id="51L-Ot-CmS"/>
+                            <constraint firstItem="8D4-rl-fOr" firstAttribute="top" secondItem="kDD-0G-2hj" secondAttribute="bottom" constant="40" id="BPO-9I-ETW"/>
+                            <constraint firstItem="TuX-56-2x7" firstAttribute="top" secondItem="wsp-MT-xgL" secondAttribute="bottom" constant="44" id="D0C-8n-i3S"/>
+                            <constraint firstItem="BtO-q6-sZT" firstAttribute="leading" secondItem="GV4-fC-Bvu" secondAttribute="leading" constant="37" id="Den-Le-MiO"/>
+                            <constraint firstItem="GV4-fC-Bvu" firstAttribute="trailing" secondItem="8D4-rl-fOr" secondAttribute="trailing" constant="36" id="EAn-ck-fia"/>
+                            <constraint firstItem="GV4-fC-Bvu" firstAttribute="trailing" secondItem="kDD-0G-2hj" secondAttribute="trailing" constant="36" id="G7x-HL-uD4"/>
+                            <constraint firstItem="wsp-MT-xgL" firstAttribute="leading" secondItem="GV4-fC-Bvu" secondAttribute="leading" constant="37" id="IDX-EE-VMr"/>
+                            <constraint firstItem="GV4-fC-Bvu" firstAttribute="trailing" secondItem="wsp-MT-xgL" secondAttribute="trailing" constant="36" id="Ib8-YS-4OV"/>
+                            <constraint firstItem="TuX-56-2x7" firstAttribute="leading" secondItem="GV4-fC-Bvu" secondAttribute="leading" constant="37" id="KbM-dl-A7o"/>
+                            <constraint firstItem="kDD-0G-2hj" firstAttribute="top" secondItem="TuX-56-2x7" secondAttribute="bottom" constant="42" id="L1o-hM-04V"/>
+                            <constraint firstItem="BtO-q6-sZT" firstAttribute="top" secondItem="GV4-fC-Bvu" secondAttribute="top" constant="32" id="Tkb-5b-EYY"/>
+                            <constraint firstItem="8D4-rl-fOr" firstAttribute="leading" secondItem="GV4-fC-Bvu" secondAttribute="leading" constant="37" id="Tuo-Fg-IDf"/>
+                            <constraint firstItem="uvT-Oo-gqv" firstAttribute="top" secondItem="cBm-vO-7zj" secondAttribute="bottom" constant="36" id="bdW-RD-mWK"/>
+                            <constraint firstItem="kDD-0G-2hj" firstAttribute="leading" secondItem="GV4-fC-Bvu" secondAttribute="leading" constant="37" id="izc-vh-vBO"/>
+                            <constraint firstItem="uvT-Oo-gqv" firstAttribute="leading" secondItem="GV4-fC-Bvu" secondAttribute="leading" constant="37" id="meN-sn-Y6u"/>
+                            <constraint firstItem="GV4-fC-Bvu" firstAttribute="trailing" secondItem="BtO-q6-sZT" secondAttribute="trailing" constant="37" id="mh4-qo-dOz"/>
+                            <constraint firstItem="cBm-vO-7zj" firstAttribute="leading" secondItem="GV4-fC-Bvu" secondAttribute="leading" constant="37" id="nDM-n2-wfl"/>
+                            <constraint firstItem="GV4-fC-Bvu" firstAttribute="trailing" secondItem="uvT-Oo-gqv" secondAttribute="trailing" constant="36" id="uDZ-Vl-bLG"/>
+                            <constraint firstItem="GV4-fC-Bvu" firstAttribute="trailing" secondItem="TuX-56-2x7" secondAttribute="trailing" constant="36" id="wf3-h4-7o5"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="5NX-2f-tDY"/>
                 </viewController>
